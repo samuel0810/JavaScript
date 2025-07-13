@@ -1,1 +1,0 @@
-let nombre = "Samuel"
