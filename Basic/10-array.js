@@ -53,7 +53,6 @@ myArray.push("Castillo")
 myArray.push("37")
 
 console.log(myArray)
-
 console.log(myArray.pop()) // elimina el ultimo y lo devuelve
 myArray.pop()
 
@@ -61,10 +60,8 @@ console.log(myArray)
 
 
 // shift y unshift
-
 console.log(myArray.shift())
 console.log(myArray)
-
 myArray.unshift("Samuel", "Castillo")
 console.log(myArray)
 

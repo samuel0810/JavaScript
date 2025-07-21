@@ -16,8 +16,36 @@ console.log(mySet)
 
 // add y delete
 
-mySet.add("samuel@gmail.com")
+mySet.add("Samuel@gmail.com")
 console.log(mySet)
 
 mySet.delete("Samuel")
+console.log(mySet)
+
+console.log(mySet.delete("Samuel"))
+console.log(mySet)
+
+// has
+console.log(mySet.has("Jimenez"))
+
+
+// size
+console.log(mySet.size)
+
+
+// Convertir un set a array
+let myArray = Array.from(mySet)
+console.log(myArray)
+
+
+// Convertit array a set
+mySet = new Set(myArray)
+console.log(mySet)
+
+
+// No permite duplicados
+
+mySet.add("Samuel@gmail.com")
+mySet.add("Samuel@gmail.com")
+mySet.add("Samuel@gmail.com")
 console.log(mySet)
