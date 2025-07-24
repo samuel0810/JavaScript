@@ -81,11 +81,50 @@ for (let i = 0; i < cadena3.length; i++) {
 console.log(`"${cadena3}" tiene ${contador3} vocales.`)
 
 // 6. Dado un array de numeros, usa un bucle para multiplicar todos los numeros y mostrar el producto
+let array = [1, 2, 3, 4, 5]
+productoTotal = 1
+
+for (let i = 0; i < array.length; i++) {
+    productoTotal = productoTotal * array[i]
+}
+
+console.log(array)
+console.log(productoTotal)
 
 // 7 Escribe un bucle que imprima la tabla de multiplicar del 5
+let tabla = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
 
+for (let b = 0; b < tabla.length; b++) {
+    b * tabla
+}
+
+console.log(tabla)
 // 8. Usa un bucle para invertir una cadena de texto
+let cadenaOriginal = "EjemploCorto"; 
+let cadenaInvertida = "";
+
+for (let i = cadenaOriginal.length - 1; i >= 0; i--) {
+    cadenaInvertida += cadenaOriginal[i]; 
+}
+
+console.log(`Original: "${cadenaOriginal}"`);
+console.log(`Invertida: "${cadenaInvertida}"`);
 
 // 9. Usa un bucle para generar los primeros 10 numeros de la secuencia de Fibonacci
+let fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+for (let i = 0; i < fibonacci.length; i++) {
+    console.log(fibonacci)
+}
 
 // 10. Dado un array de numeros, usa un bucle para crear un nuevo array que contenga solo los numeros mayores a 10
+let myArray = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+let mayoresA10 = []
+
+for (const num of myArray) {
+    if (num > 10) {
+        mayoresA10.push(num);
+    }
+}
+
+console.log(mayoresA10)
