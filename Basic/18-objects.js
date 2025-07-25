@@ -65,8 +65,8 @@ let person3 = {
     job: {
         name: "Programador",
         exp: 15,
-        work: function() {
-            console.log("La persona trabaja")
+        work: function () {
+            console.log(`La persona de ${this.exp} años de experiencia trabaja`)
         }
     }
 }
@@ -97,3 +97,27 @@ console.log(person == person4)
 console.log(person === person4)
 
 console.log(person.name == person4.name)
+
+// Iteracion
+
+for (let value in person4) {
+    console.log(value)
+}
+
+for (let key in person4) {
+    console.log(key + ":" + person4[key])
+}
+
+// Persona como objetos
+
+function Person(name, age) { // Deberia ser una clase
+    this.name = name
+    this.age = age
+}
+
+let person5 = new Person("Samuel", 17)
+console.log(person5)
+console.log(person5.name)
+
+console.log(typeof person5)
+console.log(typeof person4)
