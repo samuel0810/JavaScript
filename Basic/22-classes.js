@@ -63,3 +63,59 @@ class PersonWithMethod {
 
 let person4 = new PersonWithMethod("Samuel", 17, "Jimenez")
 person4.walk()
+
+// Propiedades privadas
+
+class PrivatePerson {
+
+    #bank
+
+    constructor(name, age, alias, bank) { 
+        this.name = name
+        this.age = age
+        this.alias = alias
+        this.#bank = bank
+    }
+
+    pay() {
+        this.#bank
+    }
+
+}
+
+let person5 = new PrivatePerson("Samuel", 17, "Jimenez", "ibe293019")
+
+console.log(person5.bank) // No podemos acceder
+
+// Getters y Setters\
+
+class GetPerson {
+
+    #name
+    #age
+    #alias
+    #bank
+
+    constructor(name, age, alias, bank) { 
+        this.#name = name
+        this.#age = age
+        this.#alias = alias
+        this.#bank = bank
+    }
+
+    get name() {
+        return this.#name
+    }
+
+    set bank(bank) {
+        this.#bank = bank
+    }
+
+}
+
+person6 = new GetPerson("Samuel", 17, "Jimenez", "ibe293019")
+
+console.log(person6)
+console.log(person6.name)
+
+person6.bank = "new ibe293019"
