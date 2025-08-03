@@ -86,24 +86,70 @@ myCar2.canMove()
 // 7. Crea una clase que haga uso de getters y setters
 class GetSetters {
 
+#email
+#bank
+
     constructor(email, bank) {
-        this.email = email
-        this.bank = bank
+        this.#email = email
+        this.#bank = bank
     }
 
     get email() {
-        return this.email
+        return this.#email
     }
 
-    set bank(bank) {
-        this.bank = bank
+    set bank(newBank) {
+        this.#bank = newBank
+    }
+    get bank() {
+        return this.#bank;
     }
 }
 
 let myGetSetters = new GetSetters("Samuel@gmail.com", "ASU28170")
-console.log(myGetSetters)
+
+
+
 // 8. Modifica la clase con getters y setters para que use propiedades privadas
+// Ya lo hice arriba
 
 // 9. Utiliza los get y set y muestra sus valores
+console.log(myGetSetters.email)
+console.log(myGetSetters.bank)
 
 // 10. Sobrescribe un metodo de una clase que utilice herencia
+
+class Padre {
+    
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+    }
+
+}
+
+class Hijo extends Padre {
+
+    constructor(name = "Marcos", age = 17) {
+        this.name = name
+        this.age = age
+    }
+    talk() {
+        console.log("El hijo habla con su padre")
+    }
+}
+
+class Hija extends Padre {
+
+    constructor(name = "Diana", age = 16) {
+        this.name = name
+        this.age = age
+    }
+    talk() {
+        console.log("La hija habla con su padre")
+    }
+}
+
+let myPadre = new Padre()
+
+console.log(myPadre)
