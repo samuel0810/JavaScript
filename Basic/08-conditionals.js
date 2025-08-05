@@ -60,7 +60,7 @@ switch (day) {
         dayName = "Domingo"
         break
     default:
-        dayName = "Numero de dia uncorrecto"
+        dayName = "Numero de dia incorrecto"
 }
 
 console.log(dayName)
