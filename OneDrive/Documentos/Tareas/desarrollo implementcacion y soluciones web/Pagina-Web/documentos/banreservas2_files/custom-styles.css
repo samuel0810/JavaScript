@@ -1,0 +1,29 @@
+/* Custom styling for Section links */
+#menu-alterno .dropdown-menu .dropdown-item[href="#Section"] {
+    background-color: #264e72;
+    font-weight: 700;
+    color: #ffffff !important;
+}
+
+/* Custom styling for links that contain "#Title" */
+.title-link {
+    margin-top: 3px !important; /* Same margin above */
+    margin-bottom: 3px !important; /* Less margin below */
+}
+
+.title-link a {
+    text-transform: initial !important;
+    color: #9B9B9B !important; /* New color for #Title links */
+    text-decoration: none !important;
+    font-family: "freight_sansbold",sans-serif !important; /* Bold font */
+    font-size: 14px !important; /* Smaller than sectionNavTitle */
+    font-weight: bold !important;
+    padding: 8px 0 !important; /* Reduced height */
+    display: block !important;
+    transition: none !important; /* No hover effects */
+}
+
+.title-link a:hover {
+    color: #9B9B9B !important; /* No color change on hover */
+    text-decoration: none !important;
+} 
